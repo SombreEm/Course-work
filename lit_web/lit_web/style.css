@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #22222e; /* Темный фон */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+.logo {
+     width: 20%;
+    cursor: pointer;
+    position: absolute;
+    left: 2%;  
+    
+}
+
+/* Контейнер с меню */
+.container {
+    background-color: rgba(212, 219, 226, 0.2); /* Полупрозрачный фон */
+    padding: 20px 40px;
+    border-radius: 30px 0 0 30px; /* Закругляем левый верхний и нижний угол */
+    display: inline-block;
+    position: relative;
+    width: auto; /* Уменьшенная ширина */
+    margin-top: 20px; /* Отступ сверху */
+    right: 0;
+    margin-left: auto; /* Двигаем контейнер вправо */
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.item {
+    position: relative;
+}
+
+.item a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+    display: block;
+}
+
+/* Подменю */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(63, 65, 68, 0.089);
+    border-radius: 5px;
+    min-width: 180px;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+.dropdown li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Показываем подменю при наведении */
+.item:hover .dropdown {
+    display: block;
+}
+
+/* Эффект наведения */
+.item a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Заголовок */
+.header {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+/* Анимированный фон */
+.intro {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Делаем больше */
+    z-index: -1;
+    margin-top: 30px; /* Отступ вниз */
+}
+/* Контейнер для анимации */
+.animation-box {
+    width: 80%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 80px 0 10px;
+    line-height: 1.4; /* Улучшает читаемость */
+}
+.text{
+    text-align: center; /* Центруємо текст */
+    color: white; /* Білий колір, щоб було видно на темному фоні */
+    font-size: 24px; /* Оптимальний розмір шрифту */
+    font-weight: 400; /* Товщина шрифту */
+    margin: 70px 0 70px; /* Відступ зверху */
+    width: 100%; /* Обмежуємо ширину тексту */
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_underarm {
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Заголовок в контейнере */
+.title_underarm {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 15px;
+    line-height: 1.4;
+}
+
+/* Список информации */
+.info-list {
+    list-style: none;
+    text-align: left;
+    color: white;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.info-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Красный заголовок */
+.alert {
+    color: #ff4444;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 40px 0 40px;
+}
+
+/* Текст внизу */
+.footer-text {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    max-width: 700px;
+}
+.container_card {
+    overflow: visible;
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px; /* Централизованная ширина */
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px 150px; /* Отступы: 50px вертикально, 150px горизонтально */
+    z-index: 3;
+
+}
+
+/* Карточки */
+.card {
+    background-color: rgba(112, 111, 142, 0.2); /* Полупрозрачный фон */
+    padding: 20px;
+    border-radius: 30% 70% 21% 79% / 61% 57% 43% 39%;
+    width: 400px;
+    height: 250px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s, z-index 0.3s;
+    -webkit-box-shadow:0px 0px 199px 25px rgba(247,151,209,0.61);
+    -moz-box-shadow: 0px 0px 199px 25px rgba(247,151,209,0.61);
+    box-shadow: 0px 0px 199px 25px rgba(247,151,209,0.61);
+}
+
+/* Эффект увеличения при наведении */
+.card:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+.hand {
+    position: relative;
+    z-index: 1;
+}
+.hand img {
+    margin: 300px;
+    height: 800px;
+    pointer-events: none;
+}
+.hand-text {
+    max-width: 1000px; /* Увеличиваем ширину блока с текстом */
+    text-align: right; /* Выравнивание текста по правому краю */
+    font-size: 20px; /* Чуть крупнее для лучшей читаемости */
+    line-height: 1.7; /* Увеличенное расстояние между строками */
+    color: white;
+    position: absolute; /* Фиксированное позиционирование */
+    right: 80px; /* Уменьшаем отступ от правого края */
+    top: 3450px; /* Поднимаем текст выше */
+}
+
+.hand-text p {
+    margin: 5px 0;
+}
+
+.hand-text p strong {
+    font-weight: bold;
+}
+.links, .partners {
+    display: flex;
+    justify-content: center; /* Центрируем элементы */
+    gap: 250px; /* Увеличиваем расстояние между элементами */
+    margin-top: 50px; /* Отступ сверху */
+    flex-wrap: wrap; /* Позволяет переносить элементы на новую строку */
+    margin: 3%;
+}
+
+.link-item, .partner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравниваем изображения и текст */
+    text-align: center;
+    width: 220px; /* Фиксированная ширина для всех элементов */
+    text-decoration: none;
+}
+
+.link-item img, .partner-item img {
+    width: 220px; /* Увеличиваем размер */
+    height: 220px; /* Делаем квадратными */
+    object-fit: contain; /* Сохраняем пропорции */
+}
+
+.link-item p, .partner-item p {
+    color: white;
+    font-size: 18px; /* Чуть больше шрифт */
+    margin-top: 10px; /* Отступ от изображения */
+}
+
+
+.partners {
+    margin-top: 40px; /* Отступ между блоками */
+}
+
+.custom-line {
+    width: 100%; /* Ширина линии */
+    border: none;
+    border-top: 3px solid rgba(255, 255, 255, 0.3); /* Полупрозрачный белый */
+    margin: 30px auto; /* Отступы сверху и снизу */
+}
+footer{
+    background-color: white;
+    width: 100%;
+}
+footer p{
+    width: 100%; 
+    text-align: center; 
+    font-size: 20px; 
+    color: black;
+    margin: 50px 0 100px;
+}

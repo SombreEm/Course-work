@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    background-color: #22222e; /* Темный фон */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+.logo {
+    width: 15%;
+    cursor: pointer;
+    position: absolute;
+    left: 2%; 
+}
+.header {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 7%;
+}
+.custom-line {
+    width: 100%; /* Ширина линии */
+    border: none;
+    border-top: 3px solid rgba(255, 255, 255, 0.3); /* Полупрозрачный белый */
+    margin: 5% 5% 5%; /* Отступы сверху и снизу */
+}
+.headerName{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+.contacts-info {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0 5%;
+    gap: 10%;
+}
+
+.right-info {
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+.right-info  p{
+    margin: 4%;
+}
+.left-info{
+    width: 70%;
+    color: white;
+    text-align: left;
+}
+.left-info p{
+    margin: 4%;
+}
+.left-info a {
+    color: white;
+}
+
+.left-info a:hover {
+    color: #aa476b; 
+}
+.right-info {
+    border: 1px solid white;
+    padding: 1em;
+    border-radius: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+footer{
+    background-color: white;
+    width: 100%;
+}
+footer p{
+    width: 100%; 
+    text-align: center; 
+    color: black;
+    font-size: 1.3em; 
+    margin: 2% 0 4.3%;
+}
