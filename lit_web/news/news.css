@@ -30,67 +30,6 @@ body {
     border-top: 3px solid rgba(255, 255, 255, 0.3); /* Полупрозрачный белый */
     margin: 5% 5% 5%; /* Отступы сверху и снизу */
 }
-.headerName{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-.contacts-info {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    margin: 5% 0 5%;
-    gap: 10%;
-}
-
-.right-info {
-    width: 50%;
-    color: white;
-    text-align: center;
-}
-.right-info  p{
-    margin: 4%;
-}
-.left-info{
-    width: 70%;
-    color: white;
-    text-align: left;
-}
-.left-info p{
-    margin: 4%;
-}
-.left-info a {
-    color: white;
-}
-
-.left-info a:hover {
-    color: #aa476b; 
-}
-.right-info {
-    border: 1px solid white;
-    padding: 1em;
-    border-radius: 1%;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-.footer {
-    margin-top: 2%;
-    background-color: white;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-}
-.footer p{
-    width: 100%; 
-    text-align: center; 
-    color: black;
-    font-size: 1.3em; 
-    margin: 2% 0 4.3%;
-}
 .button_menu {
     position: fixed;
     right: 15px;
@@ -102,6 +41,7 @@ a {
     border-radius: 8px;
     cursor: pointer;
     opacity: 1;
+    z-index: 9999;
 }
 
 .button_menu:hover {
@@ -123,6 +63,7 @@ a {
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    z-index: 9999;
 }
 
 .dropdown_menu.show {
@@ -167,6 +108,7 @@ a {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 180px;
     padding: 0;
+    z-index: 9999;
 }
 
 .item {
@@ -184,4 +126,41 @@ a {
 
 .dropdown li:last-child {
     border-bottom: none;
+}
+.news-section {
+    background-color: #2e2e48;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.news-image {
+    width: 150px;
+    border-radius: 10px;
+}
+.news-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.news-text {
+    max-width: 600px;
+    position: relative;
+}
+.news-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.news-description {
+    font-size: 16px;
+}
+.diagonal-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: rotate(-20deg);
+    top: 50%;
+    left: 0;
 }

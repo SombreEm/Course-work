@@ -1,7 +1,7 @@
 .light-theme-btn {
     position: fixed;
     right: 15px;
-    top: 15px;
+    top: 93%;
     border: none;
     outline: none;
     width: 60px;
@@ -45,8 +45,29 @@ body.light-theme {
     color: black;
 }
 
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme h6,
+body.light-theme p,
+body.light-theme a,
+body.light-theme li,
+body.light-theme pre,
+body.light-theme span,
+body.light-theme .text,
+body.light-theme .header,
+body.light-theme .info-list li{
+    color: black;
+    
+}
+
 body.light-theme .light-theme-btn {
     background-color: rgba(223, 211, 80, 0.5);
+}
+body.light-theme .alert, .alertleft {
+    color: #ff4444 !important;
 }
 
 body.light-theme .light-theme-btn__icon_moon {
@@ -57,7 +78,7 @@ body.light-theme .light-theme-btn__icon_sun {
     opacity: 1;
 }
 body.light-theme .card {
-    -webkit-box-shadow: 0px 0px 180px 59px rgba(252, 241, 116, 0.49);
-    -moz-box-shadow: 0px 0px 180px 59px rgba(252, 241, 116, 0.49);
-    box-shadow: 0px 0px 180px 59px rgba(252, 241, 116, 0.49);
+    -webkit-box-shadow:0px 0px 180px 45px rgba(245,238,98,0.49);
+    -moz-box-shadow: 0px 0px 180px 45px rgba(245,238,98,0.49);
+    box-shadow: 0px 0px 180px 45px rgba(245,238,98,0.49);
 }

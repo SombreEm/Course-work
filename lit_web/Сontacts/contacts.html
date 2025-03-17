@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <title>ДНЛІТ</title>
+    <link rel="shortcut icon" href="../icons/logoLIT.png" type="image/png">
+    <meta http-equiv="imagetoolbar" content="no" />
     <script defer src="/js/light-theme.js"></script>
     <link rel="stylesheet" href="contactscss.css">
     <link rel="stylesheet" href="/light-theme.css"> 
@@ -38,6 +41,80 @@
             <path d="M21.5287 15.9294C21.3687 15.6594 20.9187 15.2394 19.7987 15.4394C19.1787 15.5494 18.5487 15.5994 17.9187 15.5694C15.5887 15.4694 13.4787 14.3994 12.0087 12.7494C10.7087 11.2994 9.90873 9.40938 9.89873 7.36938C9.89873 6.22938 10.1187 5.12938 10.5687 4.08938C11.0087 3.07938 10.6987 2.54938 10.4787 2.32938C10.2487 2.09938 9.70873 1.77938 8.64873 2.21938C4.55873 3.93938 2.02873 8.03938 2.32873 12.4294C2.62873 16.5594 5.52873 20.0894 9.36873 21.4194C10.2887 21.7394 11.2587 21.9294 12.2587 21.9694C12.4187 21.9794 12.5787 21.9894 12.7387 21.9894C16.0887 21.9894 19.2287 20.4094 21.2087 17.7194C21.8787 16.7894 21.6987 16.1994 21.5287 15.9294Z" fill="#292D32" />
         </svg>
     </button>
+    <button class="button_menu" id="button_menu">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </g>
+        </svg>
+    </button>
+
+    <div class="dropdown_menu" id="dropdown_menu">
+        <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li class="item">
+                <a href="#">ДНЛІТ</a>
+                <ul class="dropdown">
+                    <li><a href="../news/news.html">Новини</a></li>
+                    <li><a href="../Сontacts/contacts.html">Контакти</a></li>
+                    <li><a href="../about_lyceum/about_lyceum.html">Про Ліцей</a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a href="#">Курси/Абітурієнту</a>
+                <ul class="dropdown">
+                    <li><a href="../admission_conditions/admission_conditions.html">Умови вступу до ліцею</a></li>
+                    <li><a href="../preparatory_courses/preparatory_courses.html">Підготовчі курси</a></li>
+                    <li><a href="../course_schedule/course_schedule.html">Розклад занять курсів</a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a href="#">Навчання</a>
+                <ul class="dropdown">
+                    <li><a href="../education/education.html">Навчання</a></li>
+                    <li><a href="#">Графік навчального року</a></li>
+                    <li><a href="#">Розклад занять</a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a href="#">Виховання</a>
+                <ul class="dropdown">
+                    <li><a href="#">Національно-патріотичне виховання</a></li>
+                    <li><a href="#">Свята</a></li>
+                    <li><a href="#">Самоврядування</a></li>
+                    <li><a href="#">Правовий лекторій</a></li>
+                    <li><a href="#">Краєзнавча робота</a></li>
+                    <li><a href="#">Тематичні класні години</a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a href="#">Наукова робота</a>
+                <ul class="dropdown">
+                    <li><a href="#">Науково дослідницька робота</a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a href="../about_us/about_us.html">Про нас</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("button_menu").addEventListener("click", function () {
+            document.getElementById("dropdown_menu").classList.toggle("show");
+        });
+
+        document.addEventListener("click", function (event) {
+            const button = document.getElementById("button_menu");
+            const menu = document.getElementById("dropdown_menu");
+
+            if (!button.contains(event.target) && !menu.contains(event.target)) {
+                menu.classList.remove("show");
+            }
+        });
+    </script>
     <a href="../index.html">
         <img src="../icons/logoLIT.png" alt="Логотип" class="logo">
     </a>

@@ -12,6 +12,9 @@ body {
     align-items: center;
     justify-content: start;
     position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
 }
 
 .logo {
@@ -21,18 +24,17 @@ body {
     left: 2%;  
     
 }
-
-/* Контейнер с меню */
 .container {
-    background-color: rgba(212, 219, 226, 0.2); /* Полупрозрачный фон */
+    background-color: rgba(212, 219, 226, 0.2); 
     padding: 20px 40px;
-    border-radius: 30px 0 0 30px; /* Закругляем левый верхний и нижний угол */
+    border-radius: 30px 0 0 30px; 
     display: inline-block;
     position: relative;
-    width: auto; /* Уменьшенная ширина */
-    margin-top: 20px; /* Отступ сверху */
+    width: auto; 
+    margin-top: 20px; 
     right: 0;
-    margin-left: auto; /* Двигаем контейнер вправо */
+    margin-left: auto; 
+    
 }
 
 .tabs {
@@ -220,6 +222,7 @@ body {
     font-weight: 500;
     transition: transform 0.3s;
     display: flex;
+    text-decoration: none;
     justify-content: center;
     flex-direction: column;
     position: relative;
@@ -280,7 +283,7 @@ body {
 }
 
 .link-item img, .partner-item img {
-    width: 220px; /* Увеличиваем размер */
+    width: 90%; /* Увеличиваем размер */
     height: 220px; /* Делаем квадратными */
     object-fit: contain; /* Сохраняем пропорции */
 }
@@ -302,14 +305,17 @@ body {
     border-top: 3px solid rgba(255, 255, 255, 0.3); /* Полупрозрачный белый */
     margin: 30px auto; /* Отступы сверху и снизу */
 }
-footer{
+.footer {
+    margin-top: 2%;
     background-color: white;
     width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
-footer p{
+.footer p{
     width: 100%; 
     text-align: center; 
-    font-size: 20px; 
     color: black;
-    margin: 50px 0 100px;
+    font-size: 1.3em; 
+    margin: 2% 0 4.3%;
 }
